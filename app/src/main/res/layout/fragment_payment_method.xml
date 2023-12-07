@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/input_auth_field"
+            android:backgroundTint="@color/white"
+            android:elevation="1dp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/back_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05"
+            app:tint="#363636" />
+
+        <ImageView
+            android:id="@+id/imgBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgBack"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Card"
+            android:textColor="#262626"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgBack"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyCards"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:listitem="@layout/item_cred_cards"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imgBack1"
+            app:layout_constraintStart_toStartOf="@+id/imgBack"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/layout5"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_marginHorizontal="@dimen/_10sdp"-->
+        <!--            android:layout_marginTop="@dimen/_10sdp"-->
+        <!--            android:visibility="gone"-->
+        <!--            android:background="@drawable/input_auth_field"-->
+        <!--            android:backgroundTint="@color/white"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/guideline1"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/imgBack1"-->
+        <!--            app:layout_constraintStart_toStartOf="@+id/imgBack"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/textView2">-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/radioOnline"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:buttonTint="#EA1B25"-->
+        <!--                android:checked="true"-->
+        <!--                android:drawableStart="@drawable/mobile_number"-->
+        <!--                android:drawablePadding="@dimen/_10sdp"-->
+        <!--                android:paddingStart="@dimen/_10sdp"-->
+        <!--                android:text="Cash"-->
+        <!--                app:layout_constraintBottom_toTopOf="@+id/radioCash"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintHorizontal_bias="0.518"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <View-->
+        <!--                android:id="@+id/view"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="0.5dp"-->
+        <!--                android:background="#DAD9DA"-->
+        <!--                app:layout_constraintBottom_toTopOf="@+id/radioCash"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/radioOnline" />-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/radioCash"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:buttonTint="#EA1B25"-->
+        <!--                android:checked="true"-->
+        <!--                android:drawableStart="@drawable/mobile_number"-->
+        <!--                android:drawablePadding="@dimen/_10sdp"-->
+        <!--                android:paddingStart="@dimen/_10sdp"-->
+        <!--                android:text="Credit or Debit Card"-->
+        <!--                app:layout_constraintBottom_toTopOf="@+id/radioPaypal"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/radioOnline" />-->
+
+        <!--            <View-->
+        <!--                android:id="@+id/view1"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="0.5dp"-->
+        <!--                android:background="#DAD9DA"-->
+        <!--                app:layout_constraintBottom_toTopOf="@+id/radioPaypal"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/radioCash" />-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/radioPaypal"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:buttonTint="#EA1B25"-->
+        <!--                android:checked="true"-->
+        <!--                android:drawableStart="@drawable/mobile_number"-->
+        <!--                android:drawablePadding="@dimen/_10sdp"-->
+        <!--                android:paddingStart="@dimen/_10sdp"-->
+        <!--                android:text="Paypal"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/radioCash" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.Guideline-->
+        <!--            android:id="@+id/guideline1"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            app:layout_constraintGuide_percent="0.4" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,277 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/circle"
+            android:elevation="@dimen/_3sdp"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05"
+            app:srcCompat="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/imgNotification"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/circle"
+            android:elevation="@dimen/_3sdp"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05"
+            app:srcCompat="@drawable/notification" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:letterSpacing="0.02"
+            android:paddingVertical="@dimen/_7sdp"
+            android:text="@string/my_profile"
+            android:textColor="#0A0001"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBack"
+            app:layout_constraintEnd_toStartOf="@+id/imgNotification"
+            app:layout_constraintStart_toEndOf="@+id/imgBack"
+            app:layout_constraintTop_toTopOf="@+id/imgBack"
+            app:layout_constraintVertical_bias="0.75" />
+
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:background="@drawable/bg_circle"
+            android:backgroundTint="@color/black"
+            android:clipToOutline="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/account"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:layout_constraintVertical_bias="0.03" />
+
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text=""
+            android:textColor="@color/redd"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/profilePicture"
+            app:layout_constraintStart_toStartOf="@+id/profilePicture"
+            app:layout_constraintTop_toBottomOf="@+id/profilePicture"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            style="@style/open_sans_regular_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textSecondaryColor"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/userName"
+            app:layout_constraintStart_toStartOf="@+id/userName"
+            app:layout_constraintTop_toBottomOf="@+id/userName"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <TextView
+            android:id="@+id/btnAccountSettings"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:background="@drawable/card_background_green"
+            android:backgroundTint="@color/white"
+            android:drawablePadding="@dimen/_8sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/account_settings"
+            android:textColor="@color/black"
+            app:drawableStartCompat="@drawable/account_setting"
+            app:drawableTint="@color/redd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userEmail"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <TextView
+            android:id="@+id/btnWallet"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:background="@drawable/card_background_green"
+            android:backgroundTint="@color/white"
+            android:drawablePadding="@dimen/_8sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="Wallet"
+            android:textColor="@color/black"
+            app:drawableStartCompat="@drawable/top_up"
+            app:drawableTint="@color/redd"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAccountSettings"
+           android:layout_marginTop="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/btnHelpCentre"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:background="@drawable/card_background_green"
+            android:backgroundTint="@color/white"
+            android:drawablePadding="@dimen/_8sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/help_center"
+            android:textColor="@color/black"
+            app:drawableStartCompat="@drawable/help_center"
+            app:drawableTint="@color/redd"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnWallet"
+           android:layout_marginTop="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/btnPrivacy"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:background="@drawable/card_background_green"
+            android:backgroundTint="@color/white"
+            android:drawablePadding="@dimen/_8sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/black"
+            app:drawableStartCompat="@drawable/privacy_policy"
+            app:drawableTint="@color/redd"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnHelpCentre"
+           android:layout_marginTop="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/btnTerms"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:background="@drawable/card_background_green"
+            android:backgroundTint="@color/white"
+            android:drawablePadding="@dimen/_8sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/terms_condition"
+            android:textColor="@color/black"
+            app:drawableStartCompat="@drawable/terms_and_conditions"
+            app:drawableTint="@color/redd"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPrivacy"
+           android:layout_marginTop="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/btnContactUs"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:background="@drawable/card_background_green"
+            android:backgroundTint="@color/white"
+            android:drawablePadding="@dimen/_8sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/contact_us"
+            android:textColor="@color/black"
+            app:drawableStartCompat="@drawable/contact_us"
+            app:drawableTint="@color/redd"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTerms"
+           android:layout_marginTop="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/btnLogout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:background="@drawable/card_background_green"
+            android:backgroundTint="@color/white"
+            android:drawablePadding="@dimen/_8sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/logout"
+            android:textColor="@color/black"
+            app:drawableStartCompat="@drawable/logout"
+            app:drawableTint="@color/redd"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnContactUs"
+           android:layout_marginTop="@dimen/_10sdp"
+            tools:ignore="RtlSymmetry" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

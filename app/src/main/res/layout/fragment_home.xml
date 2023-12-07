@@ -1,0 +1,649 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/circle"
+                android:elevation="@dimen/_2sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/menu"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Hello"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout1"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout1"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/circle"
+                android:elevation="@dimen/_2sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.79"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/notification"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/userProfile"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/circle"
+                android:elevation="@dimen/_2sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.93"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilePicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/baseline_person"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:background="@drawable/card_background_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            app:layout_constraintVertical_bias="0.01">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_login_duration"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.25" />
+
+            <TextView
+                android:id="@+id/hours"
+                style="@style/open_sans_white_bold_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView12"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView12"
+                app:layout_constraintTop_toBottomOf="@+id/textView12"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/time_duration">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/time_duration"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintEarnings"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:background="@drawable/card_background_green"
+            android:backgroundTint="@color/white"
+            android:elevation="@dimen/_1sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintOrders"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            app:layout_constraintVertical_bias="0.02">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_border_green"
+                app:layout_constraintBottom_toTopOf="@+id/textView15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/open_sans_secondary_medium_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_earnings"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toTopOf="@+id/totalEarnings"
+                app:layout_constraintEnd_toEndOf="@+id/spinner"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/spinner"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+            <TextView
+                android:id="@+id/totalEarnings"
+                style="@style/open_sans_white_bold_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 AED"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/spinner"
+                app:srcCompat="@drawable/your_earnings" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintOrders"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/card_background_green"
+            android:backgroundTint="@color/white"
+            android:elevation="@dimen/_1sdp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/constraintEarnings"
+            app:layout_constraintTop_toTopOf="@+id/constraintEarnings">
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                android:background="@drawable/card_border_green"
+                app:layout_constraintBottom_toTopOf="@+id/textView16"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:text="@string/total_orders"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toTopOf="@+id/totalorders"
+                app:layout_constraintEnd_toEndOf="@+id/spinner1"
+                app:layout_constraintStart_toStartOf="@+id/spinner1"
+                app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+
+            <TextView
+                android:id="@+id/totalorders"
+                style="@style/open_sans_white_bold_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                app:layout_constraintHorizontal_bias="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toTopOf="@+id/textView43"
+                app:layout_constraintEnd_toEndOf="@+id/textView16"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/spinner1"
+                app:srcCompat="@drawable/total_orders" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_9ssp"
+                android:text="Total Parcels"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintBottom_toTopOf="@+id/totalParcels"
+                app:layout_constraintEnd_toEndOf="@+id/textView16"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/totalorders" />
+
+            <TextView
+                android:id="@+id/totalParcels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp"
+                style="@style/open_sans_white_bold_medium"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView16"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintOrders">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_16sdp">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    style="@style/open_sans_white_bold_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:text="Special Incoming Orders"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.015" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    style="@style/open_sans_secondary_bold_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_all"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toEndOf="@+id/textView17"
+                    app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewSpecialOrders"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_160sdp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView17"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:layout_constraintVertical_bias="0.02"
+                    tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_incoming_order" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    style="@style/open_sans_white_bold_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/incoming_orders"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/recyclerViewSpecialOrders"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerViewSpecialOrders"
+                    app:layout_constraintVertical_bias="0.01" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    style="@style/open_sans_secondary_bold_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_all"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView19"
+                    app:layout_constraintEnd_toEndOf="@+id/textView18"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintStart_toStartOf="@+id/textView18"
+                    app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewIncomingOrders"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_160sdp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/recyclerViewSpecialOrders"
+                    app:layout_constraintStart_toStartOf="@+id/recyclerViewSpecialOrders"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19"
+                    app:layout_constraintVertical_bias="0.03"
+                    tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_incoming_order" />
+
+
+                <TextView
+                    android:id="@+id/textView200"
+                    style="@style/open_sans_white_bold_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/past_orders"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/recyclerViewSpecialOrders"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerViewIncomingOrders"
+                    app:layout_constraintVertical_bias="0.01" />
+
+
+                <TextView
+                    android:id="@+id/btnPastOrderAll"
+                    style="@style/open_sans_secondary_bold_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_all"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView200"
+                    app:layout_constraintEnd_toEndOf="@+id/textView20"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/textView20"
+                    app:layout_constraintTop_toTopOf="@+id/textView200" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewPastOrders"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/recyclerViewSpecialOrders"
+                    app:layout_constraintStart_toStartOf="@+id/textView200"
+                    app:layout_constraintTop_toBottomOf="@+id/textView200"
+                    app:layout_constraintVertical_bias="0.03"
+                    tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_incoming_order" />
+
+
+                <TextView
+                    android:id="@+id/textView2000"
+                    style="@style/open_sans_white_bold_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Past Special Orders"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/recyclerViewPastOrders"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerViewPastOrders"
+                    app:layout_constraintVertical_bias="0.01" />
+
+
+                <TextView
+                    android:id="@+id/btnPastParcelAll"
+                    style="@style/open_sans_secondary_bold_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_all"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2000"
+                    app:layout_constraintEnd_toEndOf="@+id/btnPastOrderAll"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/btnPastOrderAll"
+                    app:layout_constraintTop_toTopOf="@+id/textView2000" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewSpecialPastOrders"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/recyclerViewSpecialOrders"
+                    app:layout_constraintStart_toStartOf="@+id/textView2000"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2000"
+                    app:layout_constraintVertical_bias="0.03"
+                    tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_incoming_order" />
+
+                <!--        <com.teamx.hatly.utils.SlideToUnlock-->
+                <!--            android:id="@+id/slideToUnlock"-->
+                <!--            android:layout_width="0dp"-->
+                <!--            android:layout_height="@dimen/_40sdp"-->
+                <!--            app:cancelOnYExit="true"-->
+                <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--            app:layout_constraintEnd_toEndOf="@+id/recyclerViewIncomingOrders"-->
+                <!--            app:layout_constraintStart_toStartOf="@+id/recyclerViewIncomingOrders"-->
+                <!--            app:layout_constraintTop_toBottomOf="@+id/recyclerViewIncomingOrders"-->
+                <!--            app:layout_constraintVertical_bias="0.2"-->
+                <!--            app:slideToUnlockBackgroundColor="#1ED860"-->
+                <!--            app:slideToUnlockText="Go Offline"-->
+                <!--            app:slideToUnlockTextColor="@color/white"-->
+                <!--            app:sliderColor="@color/white" />-->
+
+
+                <!--        <RelativeLayout-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            app:layout_constraintEnd_toEndOf="@+id/recyclerViewIncomingOrders"-->
+                <!--            app:layout_constraintStart_toStartOf="@+id/recyclerViewIncomingOrders"-->
+                <!--            app:layout_constraintTop_toBottomOf="@+id/recyclerViewIncomingOrders"-->
+                <!--            android:layout_height="wrap_content">-->
+
+                <!--            <SeekBar-->
+                <!--                android:id="@+id/slider"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="@dimen/_30sdp"-->
+                <!--                android:layout_centerInParent="true"-->
+                <!--                android:max="100"-->
+                <!--                android:progress="5"-->
+                <!--                android:progressDrawable="@drawable/swipe_button_background"-->
+                <!--                android:splitTrack="false"-->
+                <!--                android:thumb="@drawable/seekbar_thumb"-->
+                <!--                android:thumbOffset="0dp" />-->
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/statusText"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_below="@id/slider"-->
+                <!--                android:layout_centerHorizontal="true"-->
+                <!--                android:paddingTop="16dp"-->
+                <!--                android:text="Go Offline"-->
+                <!--                android:textColor="#000000" />-->
+
+                <!--        </RelativeLayout>-->
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/recyclerViewSpecialPastOrders"
+                    app:layout_constraintStart_toStartOf="@+id/recyclerViewSpecialPastOrders"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerViewSpecialPastOrders">
+
+                    <SeekBar
+                        android:id="@+id/slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:max="100"
+                        android:progressDrawable="@drawable/swipe_button_background"
+                        android:splitTrack="true"
+                        android:thumb="@drawable/custom_thumb"
+                        android:thumbOffset="-10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/statusText"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_below="@id/slider"
+                        android:layout_centerHorizontal="true"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:paddingTop="16dp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <!--        <View-->
+                <!--            android:id="@+id/swipeButton"-->
+                <!--            android:layout_width="300dp"-->
+                <!--            android:layout_height="50dp"-->
+                <!--            android:layout_centerInParent="true"-->
+                <!--            android:background="@drawable/swipe_button_background"-->
+                <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--           />-->
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/slideToUnlock"
+                    app:layout_constraintEnd_toEndOf="@+id/slideToUnlock"
+                    app:layout_constraintStart_toStartOf="@+id/slideToUnlock"
+                    app:layout_constraintTop_toBottomOf="@+id/slideToUnlock"
+                    app:layout_constraintVertical_bias="0.2"
+                    app:srcCompat="@drawable/go_offline" />
+
+                <ImageView
+                    android:id="@+id/btnOnline"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/recyclerViewSpecialOrders"
+                    app:layout_constraintStart_toStartOf="@+id/recyclerViewSpecialOrders"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerViewIncomingOrders"
+                    app:srcCompat="@drawable/go_online" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

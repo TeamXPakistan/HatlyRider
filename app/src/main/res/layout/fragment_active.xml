@@ -1,0 +1,108 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activeRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/txtOrderConfoirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/item_active_list" />
+
+
+        <TextView
+            android:id="@+id/txtOrderConfoirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:background="@drawable/card_background_green"
+            android:backgroundTint="#1ED860"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:letterSpacing="0.01"
+            app:layout_constraintVertical_bias="0.97"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="Picked"
+            android:visibility="gone"
+            android:clickable="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/btnTrack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:background="@drawable/card_background_green"
+            android:backgroundTint="#1ED860"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:visibility="gone"
+            android:letterSpacing="0.01"
+            app:layout_constraintVertical_bias="0.97"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="Track"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/textView23"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:fontFamily="@font/open_sans_bold"-->
+        <!--            android:letterSpacing="0.02"-->
+        <!--            android:paddingVertical="@dimen/_7sdp"-->
+        <!--            android:text="Active"-->
+        <!--            android:textColor="#0A0001"-->
+        <!--            android:textSize="@dimen/_16ssp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/btnSend"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginHorizontal="@dimen/_10sdp"-->
+        <!--            android:background="@drawable/card_background_green"-->
+        <!--            android:gravity="center"-->
+        <!--            android:paddingVertical="@dimen/_7sdp"-->
+        <!--            android:text="@string/save"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="@dimen/_16ssp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"-->
+        <!--            app:layout_constraintStart_toStartOf="@+id/textInputLayout2"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"-->
+        <!--            app:layout_constraintVertical_bias="0.75" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

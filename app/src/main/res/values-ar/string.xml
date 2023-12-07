@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login"> تسجيل الدخول </string>
+    <string name="password"> كلمة المرور </string>
+    <string name="oops_something_went_wrong"> عفوًا ، حدث خطأ ما! </string>
+    <string name="something_wrong"> حدث خطأ ما </string>
+
+
+</resources>

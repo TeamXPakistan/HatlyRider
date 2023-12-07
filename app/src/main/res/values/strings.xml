@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name" translatable="false">Zeus</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="search_artist">Search artist</string>
+
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="something_wrong">Something went wrong</string>
+    <string name="already_have_account">Already have account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="enter_your_credentials">Enter your credentials</string>
+    <string name="term_conditions"><![CDATA[Term & Conditions]]></string>
+    <string name="enter_your_mobile_to_retrieve_your_password">Enter your mobile to retrieve your password.</string>
+    <string name="resend">Resend</string>
+    <string name="didn_t_receive_code">Didn’t receive code?</string>
+    <string name="create_a_new_password">Create a New Password</string>
+    <string name="verify">Verify</string>
+    <string name="save">Save</string>
+    <string name="your_new_password_must_be_diffrent_from_npreviously_used_password">Your new password must be diffrent from \npreviously used password.</string>
+    <string name="total_login_duration">Total Login Duration</string>
+    <string name="past_orders">Past Orders</string>
+    <string name="view_all">View All</string>
+    <string name="incoming_orders">Incoming Orders</string>
+    <string name="your_earnings">Your Earnings</string>
+    <string name="total_orders">Total Orders</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="dropoff">Dropoff</string>
+    <string name="accept">Accept</string>
+    <string name="orders">Orders</string>
+    <string name="my_profile">My Profile</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="contact_us">Contact Us</string>
+    <string name="logout">Logout</string>
+    <string name="help_center">Help Center</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="notifications">Notifications</string>
+
+
+    <string name="enter_name">Enter name</string>
+    <string name="name_must_have_atleast_3_character_long">Name must have atleast 3 character long</string>
+    <string name="name_maximum">Name should not exceed 15 character</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="enter_Number_with_Country_Code">Enter Number with Country Code (e.g +92)</string>
+    <string name="enter_Password">Enter Password</string>
+    <string name="password_does_not_match">Password does not match</string>
+    <string name="enter_your_password">xxxxxxxxx</string>
+    <string name="password_8_character">Password must have atleast 8 character</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_phone">Enter phone number</string>
+    <string name="wallet">Wallet</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="account_setting">Account Setting</string>
+    <string name="change_password">Change Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+
+
+</resources>

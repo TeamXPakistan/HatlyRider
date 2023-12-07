@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "42990662374",
+    "project_id": "hatly-app-da903",
+    "storage_bucket": "hatly-app-da903.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42990662374:android:c3e4de1bda8b6749368127",
+        "android_client_info": {
+          "package_name": "com.teamx.hatlyDriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42990662374-okvt5qt7kj352u9u6m1n72l0c4ufnije.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5RV2a-CYc9TXo-Vs7be6o7PB70ch1Re0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42990662374-0sdf7m8k58o4cdjmsal2ni3avnfj4aq9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "42990662374-sgsfcgpedh3hq4brbk21apo8smg2chq6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.teamx.hatly"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42990662374:android:eab662dbfd28096e368127",
+        "android_client_info": {
+          "package_name": "com.teamx.hatlyUser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42990662374-pngrkaiddr8hm2smihcpn0b54gisoa9r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamx.hatlyUser",
+            "certificate_hash": "0c8c044ee2f06315dd27a0f7c64dd806cf9c7c81"
+          }
+        },
+        {
+          "client_id": "42990662374-okvt5qt7kj352u9u6m1n72l0c4ufnije.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5RV2a-CYc9TXo-Vs7be6o7PB70ch1Re0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42990662374-0sdf7m8k58o4cdjmsal2ni3avnfj4aq9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "42990662374-sgsfcgpedh3hq4brbk21apo8smg2chq6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.teamx.hatly"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

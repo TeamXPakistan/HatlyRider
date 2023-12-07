@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.teamx.hatlyDriver.ui.activity.mainActivity.MainViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.mainActivity.MainActivity">
+
+        <fragment
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/main_navigation_graph" />
+
+        <!--        <androidx.fragment.app.FragmentContainerView-->
+        <!--            android:id="@+id/nav_host_fragment"-->
+        <!--            android:name="androidx.navigation.fragment.NavHostFragment"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            app:defaultNavHost="true"-->
+        <!--            app:navGraph="@navigation/main_navigation_graph" />-->
+
+        <!--        <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+        <!--            android:id="@+id/coordinator"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
+
+        <!--            <com.google.android.material.bottomnavigation.BottomNavigationView-->
+        <!--                android:id="@+id/bottomappbar"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="bottom">-->
+
+      <!--  <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigationbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            app:itemIconTint="@color/bottom_nav_color"
+            app:itemTextColor="@color/bottom_nav_color"
+            app:labelVisibilityMode="selected"
+            app:menu="@menu/bottom_navigation_menu"
+            app:popUpToInclusive="true" />-->
+
+        <!--            </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+
+        <!--        </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</layout>

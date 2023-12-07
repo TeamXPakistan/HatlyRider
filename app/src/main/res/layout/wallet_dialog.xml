@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/button_radius_corner"
+            android:paddingVertical="@dimen/_20sdp"
+            android:backgroundTint="@color/white"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/hatlyIcon"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/bg_circle"
+                android:backgroundTint="#1ED860"
+                android:clipToOutline="true"
+                android:padding="@dimen/_10sdp"
+                android:scaleType="fitXY"
+                app:layout_constraintVertical_bias="0.03"
+                android:src="@drawable/round_check_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top-up Success"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hatlyIcon" />
+
+            <TextView
+                android:id="@+id/txtTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top-up Success"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hatlyIcon" />
+
+            <TextView
+                android:id="@+id/txtTitle21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:text="Your top-up has been successfully done"
+                android:textColor="#80262626"
+                android:textSize="@dimen/_13ssp"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txtTitle2154"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:text="Top-up Amount"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitle21"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txtDialogPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:text="100 AED"
+                android:textAlignment="center"
+                android:textColor="#EA1B25"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitle2154"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/border_background"
+                android:backgroundTint="@color/green"
+                android:fontFamily="@font/open_sans_regular"
+                android:paddingVertical="@dimen/_10sdp"
+                android:text="Back to home"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDialogPrice" />
+
+            <TextView
+                android:id="@+id/txtTitle215545644"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:text="Top-up more amount"
+                android:textAlignment="center"
+                android:textColor="#1ED860"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/txtLogin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="@dimen/_20sdp"-->
+    <!--            android:background="@drawable/button_radius_green"-->
+    <!--            android:backgroundTint="@color/white"-->
+    <!--            android:elevation="@dimen/_2sdp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            android:paddingBottom="@dimen/_5sdp"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/imageView23"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/_90sdp"-->
+    <!--                android:elevation="@dimen/_1sdp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:visibility="gone"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                app:layout_constraintVertical_bias="0.0"-->
+    <!--                app:srcCompat="@drawable/round_close_24" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvLocation"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Permission Requested"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="@dimen/_14sdp"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvLocation1"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toBottomOf="@+id/imageView23"-->
+    <!--                app:layout_constraintVertical_bias="0.1"-->
+    <!--                app:layout_constraintVertical_chainStyle="spread" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvLocation1"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginHorizontal="@dimen/_15sdp"-->
+    <!--                android:text="dfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfffdfdfff"-->
+    <!--                android:textAlignment="viewStart"-->
+    <!--                android:textSize="@dimen/_11ssp"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/allowBtn"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toBottomOf="@+id/tvLocation"-->
+    <!--                app:layout_constraintVertical_bias="0.06" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/denyBtn"-->
+    <!--                android:layout_width="@dimen/_120sdp"-->
+    <!--                android:layout_height="@dimen/_35sdp"-->
+    <!--                android:layout_marginVertical="@dimen/_25sdp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:maxLines="3"-->
+    <!--                android:text="Deny"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:elevation="@dimen/_1sdp"-->
+    <!--                android:textSize="@dimen/_10ssp"-->
+    <!--                android:textStyle="normal"-->
+    <!--                android:background="@drawable/button_radius_green"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toStartOf="@+id/allowBtn"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toBottomOf="@+id/tvLocation1" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/allowBtn"-->
+    <!--                android:layout_width="@dimen/_120sdp"-->
+    <!--                android:layout_height="@dimen/_35sdp"-->
+    <!--                android:elevation="@dimen/_1sdp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:maxLines="3"-->
+    <!--                android:text="Allow"-->
+    <!--                android:background="@drawable/button_radius_green"-->
+    <!--                android:backgroundTint="#000"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="@dimen/_10ssp"-->
+    <!--                android:textStyle="normal"-->
+    <!--                app:layout_constraintBottom_toBottomOf="@+id/denyBtn"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toEndOf="@+id/denyBtn"-->
+    <!--                app:layout_constraintTop_toTopOf="@+id/denyBtn" />-->
+
+
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+</layout>
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/denyBtn"-->
+    <!--android:layout_width="@dimen/_120sdp"-->
+    <!--android:layout_height="@dimen/_35sdp"-->
+    <!--android:layout_marginVertical="@dimen/_25sdp"-->
+    <!--android:gravity="center"-->
+    <!--android:maxLines="3"-->
+    <!--android:text="Deny"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textColor="@color/upperGredient"-->
+    <!--android:elevation="@dimen/_1sdp"-->
+    <!--android:textSize="@dimen/_10ssp"-->
+    <!--android:textStyle="normal"-->
+    <!--android:background="@drawable/cncl_btn_border"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/allowBtn"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/tv_title_text" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/allowBtn"-->
+    <!--android:layout_width="@dimen/_120sdp"-->
+    <!--android:layout_height="@dimen/_35sdp"-->
+    <!--android:elevation="@dimen/_1sdp"-->
+    <!--android:gravity="center"-->
+    <!--android:maxLines="3"-->
+    <!--android:text="Allow"-->
+    <!--android:background="@drawable/notification_round_item"-->
+    <!--android:backgroundTint="@color/upperGredient"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/_10ssp"-->
+    <!--android:textStyle="normal"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/denyBtn"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/denyBtn"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/denyBtn" />-->

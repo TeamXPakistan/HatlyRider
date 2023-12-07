@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/tempFragment">
+
+    <fragment
+        android:id="@+id/tempFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.Auth.temp.TempFragment"
+        android:label="TempFragment"
+        tools:layout="@layout/fragment_temp">
+        <action
+            android:id="@+id/action_tempFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_tempFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.Auth.login.LogInFragment"
+        android:label="LogInFragment">
+        <action
+            android:id="@+id/action_logInFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.Auth.singup.SignupFragment"
+        android:label="SignupFragment" >
+        <action
+            android:id="@+id/action_signupFragment_to_forgotFragment"
+            app:destination="@id/forgotFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewPassFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.Auth.newPassword.CreateNewPassFragment"
+        android:label="CreateNewPassFragment" >
+        <action
+            android:id="@+id/action_createNewPassFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.Auth.forgot.ForgotFragment"
+        android:label="ForgotFragment" >
+        <action
+            android:id="@+id/action_forgotFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.Auth.otp.OtpFragment"
+        android:label="OtpFragment" >
+        <action
+            android:id="@+id/action_otpFragment_to_createNewPassFragment"
+            app:destination="@id/createNewPassFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.Dashboard.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_orderFragment"
+            app:destination="@id/orderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.orders.OrdersFragment"
+        android:label="OrderFragment" >
+        <action
+            android:id="@+id/action_orderFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.chat.ChatFragment"
+        android:label="ChatFragment" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.accountSetting.ChangePasswordFragment"
+        android:label="ChangePasswordFragment" />
+    <fragment
+        android:id="@+id/notificaitonFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.Dashboard.notification.NotificaitonFragment"
+        android:label="NotificaitonFragment" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.accountSetting.EditProfileFragment"
+        android:label="EditProfileFragment" />
+    <fragment
+        android:id="@+id/paymentMethodFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.payments.paymentmethod.PaymentMethodFragment"
+        android:label="PaymentMethodFragment" />
+    <fragment
+        android:id="@+id/topUpFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.topUp.TopUpFragment"
+        android:label="TopUpFragment" />
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.wallet.WalletFragment"
+        android:label="WalletFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.Dashboard.Profile.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/transcationHistoryFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.wallet.TranscationHistoryFragment"
+        android:label="TranscationHistoryFragment" />
+    <fragment
+        android:id="@+id/parcelFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.parcel.ParcelFragment"
+        android:label="ParcelFragment" >
+        <action
+            android:id="@+id/action_parcelFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trackFragment"
+        android:name="com.teamx.hatlyDriver.ui.fragments.track.TrackFragment"
+        android:label="TrackFragment" />
+
+
+</navigation>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/input_auth_field"
+        android:backgroundTint="@color/white">
+
+        <ImageView
+            android:id="@+id/imgShop"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:src="@drawable/visa_blue_box"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:text="Visa"
+            android:textColor="#EA1B25"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtCardDetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toEndOf="@+id/imgShop"
+            app:layout_constraintTop_toTopOf="@+id/imgShop" />
+
+        <TextView
+            android:id="@+id/txtCardDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:text="1234 **** **** 9870 | 04/2026"
+            android:textColor="#838588"
+            android:textSize="@dimen/_9ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShop"
+            app:layout_constraintStart_toStartOf="@+id/txtCardName"
+            app:layout_constraintTop_toBottomOf="@+id/txtCardName" />
+
+        <androidx.appcompat.widget.AppCompatCheckedTextView
+            android:id="@+id/txtLogin12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_radius_corner_red"
+            android:backgroundTint="@color/remember_me_selector_color"
+            android:fontFamily="@font/open_sans_regular"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Set As Default"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtLogin123"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtCardDetail"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtLogin123"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_border_green"
+            android:fontFamily="@font/open_sans_regular"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Detach Card"
+            android:textAlignment="center"
+            android:textColor="#1ED860"
+            android:textSize="@dimen/_9ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txtLogin12"
+            app:layout_constraintStart_toStartOf="@+id/txtLogin12"
+            app:layout_constraintTop_toBottomOf="@+id/txtLogin12" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

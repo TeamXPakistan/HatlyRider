@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_auth_field"
+            android:backgroundTint="@color/white"
+            android:elevation="1dp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/back_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05"
+            app:tint="#363636" />
+
+        <ImageView
+            android:id="@+id/imgBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_auth_field"
+            android:backgroundTint="@color/white"
+            android:elevation="1dp"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.93"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top-up"
+            android:textColor="#363636"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBack"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/textView456"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="How much amount would you like to transfer?"
+            android:textColor="#262626"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintVertical_bias="0.05"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imgBack1"
+            app:layout_constraintStart_toStartOf="@+id/imgBack"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/userEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_radius_corner"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Top-up Amount"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColorHint="#B3EA1B25"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textCursorDrawable="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/textView456"
+            app:layout_constraintStart_toStartOf="@+id/textView456"
+            app:layout_constraintTop_toBottomOf="@+id/textView456" />
+
+
+        <TextView
+            android:id="@+id/textView454"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Method"
+            android:textColor="#363636"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/userEmail"
+            app:layout_constraintTop_toBottomOf="@+id/userEmail" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/radioSelectedCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/userEmail"
+            app:layout_constraintStart_toStartOf="@+id/textView454"
+            app:layout_constraintTop_toBottomOf="@+id/textView454">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#1ED860"
+                android:checked="true"
+                android:clickable="false"
+                android:drawableEnd="@drawable/visa_blue_box"
+                android:drawablePadding="@dimen/_3sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView12155453"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView1215543" />
+
+            <TextView
+                android:id="@+id/textView1215543"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:fontFamily="@font/open_sans_regular"
+                android:gravity="center_vertical"
+                android:text="VISA"
+                android:textColor="#EA1B25"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/radio1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView12155453"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="**** **** **** 9870 | 04/2026"
+                android:textColor="#838588"
+                android:textSize="@dimen/_9ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView1215543"
+                app:layout_constraintTop_toBottomOf="@+id/textView1215543" />
+
+            <TextView
+                android:id="@+id/textView121653"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/open_sans_regular"
+                android:gravity="center_vertical"
+                android:text="Change"
+                android:paddingStart="@dimen/_5sdp"
+                android:textColor="#1ED860"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RadioButton
+            android:id="@+id/radioAddNewCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:buttonTint="#1ED860"
+            android:drawablePadding="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Add New Card"
+            android:textColor="#010101"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/radioSelectedCard"
+            app:layout_constraintStart_toStartOf="@+id/radioSelectedCard"
+            app:layout_constraintTop_toBottomOf="@+id/radioSelectedCard" />
+
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:background="@drawable/border_background"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/open_sans_regular"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="Confirm"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/radioSelectedCard"
+            app:layout_constraintStart_toStartOf="@+id/radioSelectedCard"
+            app:layout_constraintTop_toBottomOf="@+id/radioAddNewCard"
+            app:layout_constraintVertical_bias="0.2" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
